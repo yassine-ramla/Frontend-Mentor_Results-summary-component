@@ -1,0 +1,182 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+p {
+    font-size: 18px;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    border-radius: 25px;
+    box-shadow: 15px 30px 30px 0 hsl(221, 100%, 96%);
+    width: 100vmin;
+    height: 70vmin;
+    max-width: 900px;
+    max-height: 600px;
+}
+
+.result {
+    width: 50%;
+    background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    border-radius: 25px;
+    color: hsl(241, 100%, 89%);
+    display: grid;
+    grid-template-rows: 2fr 2fr 2fr 2fr 2fr 3fr;
+    grid-template-columns: 1fr;
+    padding: min(20px, 5%) 0 min(30px, 8%);
+}
+
+.result h1 {
+    color: white;
+    margin: auto;
+}
+
+.result h2 {
+    margin: auto;
+}
+
+.result p {
+    text-align: center;
+    margin: auto max(20px, 10%);
+}
+
+.average {
+    padding: 15% 20%;
+    grid-row-start: 2;
+    grid-row-end: 5;
+    background: linear-gradient(to bottom, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.average span {
+    color: white;
+    font-size: 50px;
+}
+
+.summary {
+    width: 50%;
+    height: 100%;
+    color: hsl(224, 30%, 27%);
+    display: grid;
+    grid-template-rows: 2fr 2fr 2fr 2fr 2fr 3fr;
+    grid-template-columns: 1fr;
+    padding: min(20px, 5%) 0 min(30px, 8%);
+}
+
+.summary h2 {
+    width: 90%;
+    margin: auto;
+}
+
+.summary-card {
+    width: 90%;
+    height: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+}
+
+.summary-card div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.summary-card div img {
+    width: 40%;
+    padding: min(5px, 5%) max(10px, 5%);
+}
+
+
+.summary-card p {
+    color: gray;
+    margin-right: max(10px, 5%);
+}
+
+.summary-card span {
+    color: hsl(224, 30%, 27%);
+}
+
+.reaction {
+    color: hsl(0, 100%, 67%);
+    background-color: hsla(0, 100%, 67%, 0.1);
+}
+
+.memory {
+    color: hsl(39, 100%, 56%);
+    background-color: hsla(39, 100%, 56%, 0.1);
+}
+
+.verbal {
+    color: hsl(166, 100%, 37%);
+    background-color: hsla(166, 100%, 37%, 0.1);
+}
+
+.visual {
+    color: hsl(234, 85%, 45%);
+    background-color: hsla(234, 85%, 45%, 0.1);
+}
+
+.summary button:hover, .summary button:active {
+    background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+.summary button {
+    width: 90%;
+    margin: auto;
+    border: none;
+    padding: 20px;
+    background: hsl(224, 30%, 27%);
+    color: white;
+    font-weight: 800;
+    font-size: large;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+@media (max-width: 500px) {
+    .container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        max-height: none;
+    }
+
+    .result {
+        width: 100%;
+        height: 50%;
+        border-radius: 0 0 25px 25px;
+        padding: min(10px, 5%) 0 min(20px, 8%);
+    }
+
+    .summary {
+        width: 100%;
+        height: 50%;
+        padding: min(20px, 5%) 0 min(30px, 8%);
+    }
+
+    .average {
+        padding: 10% 15%;
+    }
+}

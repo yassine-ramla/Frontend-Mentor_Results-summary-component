@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap"
+      rel="stylesheet" />
+    <title>Frontend Mentor | Results summary component</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="result">
+        <h2>Your Result</h2>
+        <div class="average"><span id="average">76</span>of 100</div>
+        <h1>Great</h1>
+        <p>
+          Your score is higher than <span id="floor-average">65</span>% of the people who have taken these
+          tests.
+        </p>
+      </div>
+      <div class="summary">
+        <h2>Summary</h2>
+        <div class="summary-card reaction">
+          <div>
+            <img id="reaction-icon" alt="reaction icon" />
+            <h3 id="reaction-category">category</h3>
+          </div>
+          <p><span id="reaction-score">0 </span>/ 100</p>
+        </div>
+        <div class="summary-card memory">
+          <div>
+            <img id="memory-icon" alt="memory icon" />
+            <h3 id="memory-category">category</h3>
+          </div>
+          <p><span id="memory-score">0 </span>/ 100</p>
+        </div>
+        <div class="summary-card verbal">
+          <div>
+            <img id="verbal-icon" alt="verbal icon" />
+            <h3 id="verbal-category">category</h3>
+          </div>
+          <p><span id="verbal-score">0 </span>/ 100</p>
+        </div>
+        <div class="summary-card visual">
+          <div>
+            <img id="visual-icon" alt="visual icon" />
+            <h3 id="visual-category">category</h3>
+          </div>
+          <p><span id="visual-score">0 </span>/ 100</p>
+        </div>
+        <button>Continue</button>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
