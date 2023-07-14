@@ -22,14 +22,14 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
-![](./screenshot-active.jpg)
-![](./screenshot-mobile.jpg)
+![](./screenshot.png)
+![](./screenshot-active.png)
+![](./screenshot-mobile.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [solution URL](https://www.frontendmentor.io/solutions/responsive-resultsummary-component-using-html-css-flex-and-grid-and-js-7OSq0FjYvc)
+- Live Site URL: [live site URL](https://yassine-ramla.github.io/Frontend-Mentor_Results-summary-component/)
 
 ### Built with
 
