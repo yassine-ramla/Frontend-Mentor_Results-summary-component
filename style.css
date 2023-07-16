@@ -9,8 +9,25 @@ body {
     width: 100vw;
     height: 100vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+footer {
+    text-align: center;
+    margin: 20px 50px;
+    color: hsl(224, 30%, 27%);
+    margin-top: 50px;
+}
+
+footer a {
+    text-decoration: none;
+    color: hsl(224, 30%, 27%);
+}
+
+footer a:hover {
+    color: hsl(252, 100%, 67%);
 }
 
 p {
@@ -18,7 +35,7 @@ p {
     text-align: center;
 }
 
-.container {
+main {
     display: flex;
     border-radius: 25px;
     box-shadow: 15px 30px 30px 0 hsl(221, 100%, 96%);
@@ -137,7 +154,8 @@ p {
     background-color: hsla(234, 85%, 45%, 0.1);
 }
 
-.summary button:hover, .summary button:active {
+.summary button:hover,
+.summary button:active {
     background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
 }
 
@@ -155,7 +173,7 @@ p {
 }
 
 @media (max-width: 500px) {
-    .container {
+    main {
         width: 100%;
         height: 100%;
         display: flex;
@@ -178,5 +196,9 @@ p {
 
     .average {
         padding: 10% 15%;
+    }
+
+    footer {
+        display: none;
     }
 }
